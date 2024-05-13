@@ -9,9 +9,18 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        Button("Crash") {
-          fatalError("Crash was triggered")
+        TabView() {
+            HomeView().tabItem {
+                Image(systemName: "house")
+            }.tag(1)
+            AddView().tabItem {
+                Image(systemName: "plus.circle")
+            }.tag(1)
+            ProfileView().tabItem {
+                Image(systemName: "person")
+            }.tag(1)
         }
+        .accentColor(.accent)
     }
 }
 
