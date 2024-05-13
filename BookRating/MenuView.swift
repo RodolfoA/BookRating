@@ -20,7 +20,7 @@ struct MenuView: View {
                 Image(systemName: "person")
             }.tag(1)
         }
-        .accentColor(.accent)
+        .accentColor(.accentColor)
     }
 }
 
